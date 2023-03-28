@@ -1,2 +1,4 @@
 # Hangman-Project-2023
-Ist project for JavaScript
+1st project for JavaScript
+
+
