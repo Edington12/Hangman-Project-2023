@@ -26,10 +26,10 @@ const startGame = () => {
     let randomWord = pickRandomWord().toLowerCase();
 
 /*an array for guessed letters*/
-    let guessedLetters = [];
+  let guessedLetters = [];
 
 /*Track the number of guesses left*/
-    let guessesRemaining = 6;
+  let guessesRemaining = 6;
 
 /*Input of the person guessing the letters*/
 //let inputGuess;
@@ -38,7 +38,7 @@ const startGame = () => {
 //let correctAnswer = Array(randomWord.length).fill("_");
 
  /*is game running/complete...*/
-    let isgameOver = false;
+  let isgameOver = false;
 
 
  /*Build the hangman*/
@@ -56,12 +56,12 @@ const startGame = () => {
     if (guessedLetters.includes(guessLetters)) {
       console.log(`Please try again - you have already guessed this letter "${guessedLetters}".`);
       } else if (randomWord.includes(guessLetters)) {
-        console.log(`This is a correct guess :) The letter "${guessLetters}" is in the word.`);
-        guessedLetters.push(guessLetters);
-        guessesRemaining--;
-        } else {
-          console.log(`This is an incorrect guess.  The letter "${guessLetters}" is not in the word.`);
+          console.log(`This is a correct guess :) The letter "${guessLetters}" is in the word.`);
+          guessedLetters.push(guessLetters);
           guessesRemaining--;
+        } else {
+            console.log(`This is an incorrect guess.  The letter "${guessLetters}" is not in the word.`);
+            guessesRemaining--;
       //displayGameStatus();
     }
   }

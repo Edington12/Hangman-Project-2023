@@ -6,7 +6,7 @@
   },
   "type": "module",
   "main": "index.js",
-  "author": "Edington12",
+  "author": "Michele Edington",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Edington12/hangman.git"
