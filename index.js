@@ -37,7 +37,7 @@ const startGame = () => {
 /*The answer and has won/lost etc..*/
 //let correctAnswer = Array(randomWord.length).fill("_");
 
- /*is game complete...*/
+ /*is game running/complete...*/
     let isgameOver = false;
 
 
